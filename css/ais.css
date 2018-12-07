@@ -1,0 +1,102 @@
+.thumbnail {
+  background: #2E9FE4;
+  width: 200px;
+  height: 450px;
+  margin: 27px 0px;
+  font-size: 13px;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #2E9FE4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  width: 160px;
+  height: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin:  2px 10px;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.glyphicon {
+margin-right: 4px ; /*override*/
+}
+.pagination .glyphicon {
+margin-right: 0px ; /*override*/
+}
+
+.pagination a {
+
+color: #555;
+
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 75%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin: 250px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+#myTable {
+  width: 75%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  margin: 0px 250px;
+
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+  width:50px;
+  height: 50px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+.city{
+  margin: 120px 00px;
+
+}

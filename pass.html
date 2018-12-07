@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+  <meta charset="UTF-8">
+  <title>Reset Password</title>
+  
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="css/password_style.css">
+
+    <SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+$(document).ready(function(){
+        if($('#graduate_degree').val() == 'English'){ // or this.value == 'volvo'
+            console.log('OK');
+            $('.eng').show();
+            $('.rus').hide();
+        }
+        else{
+            $('.rus').show();
+            $('.eng').hide();
+        }
+        $('#graduate_degree').change(function(){
+          if($(this).val() == 'English' ){ // or this.value == 'volvo'
+            console.log('OK');
+            $('.eng').show();
+            $('.rus').hide();
+          }else{
+            $('.eng').hide();
+            $('.rus').show();
+          }
+        });
+    });
+
+	function readText (form) {
+	    TestVar =form.inputbox.value;
+      alert ("Password of this ID: " + TestVar + "  was send to akerkeofficial@gmail.com email address")
+}
+	</SCRIPT>
+</head>
+
+<body>
+
+
+<div class="form">
+  <div class="thumbnail"><img src="image/key.png"/></div>
+  <div class="container">
+            
+    </div> 
+  <form class="register-form">
+    <input type="text" placeholder="name"/>
+    <input type="password" placeholder="password"/>
+    <input type="text" placeholder="email address"/>
+    <button>create</button>
+  </form>
+  <div class="container">
+  <div class="info">
+<div class="form-group">
+                <select class="form-control input-lg" id="graduate_degree" >
+     <option>English</option>
+     <option>Русский</option>
+    </select>
+            </div>
+            <div class="form-group eng student" id="ubt_score">
+                <label for="inputlg">To start password reset process please enter the student ID  given to you by University.</label>
+            </div>
+            
+            <div class="form-group rus student">
+                <label for="inputlg">Чтобы начать процесс сброса пароля введите студента ID, предоставленный вам Университетом.</label>
+            </div>   </div>
+</div>
+  <form class="form-group rus student" NAME="myform" ACTION="" METHOD="GET">
+    <input type="text" name="inputbox" placeholder="ID номер студента"><p>
+    <button onClick="readText(this.form)">Сброс</button>
+    <p class="message"><a href="login.html">Вернуться на страницу входа</a>
+</p>
+  </form>
+  <form class="form-group eng student" NAME="myform" ACTION="" METHOD="GET">
+    <input type="text" name="inputbox" placeholder="student ID number"><p>
+    <button onClick="readText(this.form)">Reset</button>
+    <p class="message"><a href="login.html">Back to Login page</a>
+</p>
+  </form>
+</div>
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

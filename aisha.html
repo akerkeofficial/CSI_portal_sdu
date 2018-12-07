@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <title>lab-2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<script>
+
+ $(document).ready(function(){
+        if($('#graduate_degree').val() == 'English'){ // or this.value == 'volvo'
+            console.log('OK');
+            $('.eng').show();
+            $('.rus').hide();
+        }
+        else{
+            $('.rus').show();
+            $('.eng').hide();
+        }
+        $('#graduate_degree').change(function(){
+          if($(this).val() == 'English' ){ // or this.value == 'volvo'
+            console.log('OK');
+            $('.eng').show();
+            $('.rus').hide();
+          }else{
+            $('.eng').hide();
+            $('.rus').show();
+          }
+        });
+    });
+  
+
+</script> 
+
+<body>
+
+    <div class="container">
+        <h2>Малиметтер</h2>        
+            <div class="form-group student">
+                <label for="sel2">оку дарежеси</label>
+                <select class="form-control input-lg" id="graduate_degree" >
+     <option>English</option>
+     <option>Русский</option>
+    </select>
+            </div>
+            <div class="form-group eng student" id="ubt_score">
+                <label for="inputlg">adasdsad</label>
+            </div>
+            
+            <div class="form-group rus student">
+                <label for="inputlg">жеке куалик номери</label>
+            </div>           
+</body>

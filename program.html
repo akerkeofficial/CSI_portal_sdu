@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Program Structure</title>
+<link rel="stylesheet" href="css/program_style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+$(document).ready(function(){
+        if($('#graduate_degree').val() == 'Freshman'){ // or this.value == 'volvo'
+            console.log('OK');
+            $('.eng').show();
+            $('.rus').hide();
+            $('.kaz').hide();
+            $('.tur').hide();
+
+        }
+        else{
+            $('.rus').show();
+            $('.eng').hide();
+        }
+        $('#graduate_degree').change(function(){
+          if($(this).val() == 'Freshman' ){ // or this.value == 'volvo'
+            console.log('OK');
+            $('.eng').show();
+            $('.rus').hide();
+            $('.kaz').hide();
+            $('.tur').hide();
+          }else if($(this).val() == 'Sophomore' ){
+            $('.eng').hide();
+            $('.rus').show();
+            $('.kaz').hide();
+            $('.tur').hide();
+          }
+          else if($(this).val() == 'Junior' ){
+            $('.eng').hide();
+            $('.rus').hide();
+            $('.kaz').show();
+            $('.tur').hide();
+          }
+          else if($(this).val() == 'Senior' ){
+            $('.eng').hide();
+            $('.rus').hide();
+            $('.kaz').hide();
+            $('.tur').show();
+          }
+        });
+    });
+  </SCRIPT>
+</head>
+<body>
+
+  <div class="column" style=" margin: 20px">
+      <div class="col-md-4" >
+
+<div class="container">
+<a href="homepage.html" ><img src="image/sdu_only.svg" width="250" style="margin:  0px 0px;"></a>
+<div class="w3-sidebar w3-bar-block" >
+
+<div class="thumbnail">
+      <a href="homepage.html" ><img src="image/homepage.jpeg" width="40" style="margin:  0px 80px;"></a>
+
+  <a href="program.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-file"></i> Program Structure</a> 
+  <a href="elective.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-plus-square"></i> Elective Course Registration</a> 
+  <a href="teacher.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-address-card-o"></i> Teachers</a> 
+  <a href="schedule.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-object-ungroup"></i> Schedule</a>
+  <a href="work.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-trash"></i> Homework/Deadline/ Exams</a>
+  <a href="Grades.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-percent"></i> Grades List</a>
+  <a href="transcript.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-graduation-cap"></i> Transcript</a>
+  <a href="mail.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-envelope-o"></i> SDUmail</a>
+  <a href="#" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-globe"></i> Settings</a>
+  <a href="support.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-question"></i> Support</a>
+ <button class="button" style="vertical-align:middle" onclick="location.href='login.html'"><span>Log Out </span></button>
+
+</div>
+
+</div>
+</div>
+</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a style="margin:  0px 400px; color:#2E9FE4; font-size:25px;">Course Structure</a><br>
+        <a style=" margin: 0px 400px; color:#F40930;">Failed Course</a><br>
+        <a style=" margin: 0px 400px; color:#6170CA;">Courses will be selected</a><br>
+        <a style=" margin: 0px 400px; color:#2FF53E;">Succesfully passed course</a><br>
+        <a style=" margin: 0px 400px; color:#FCBC04;">The courses already selected </a><br>
+
+
+
+
+      
+      <div class="info">
+          <div class="form-group">
+                <select class="form-control input-lg" id="graduate_degree" >
+                  <option>Freshman</option>
+                  <option>Sophomore</option>
+                  <option>Junior</option>
+                  <option>Senior</option>
+                 </select>
+          </div>
+            <div class="form-group eng student" id="ubt_score">
+<table>
+  <h1 style=" margin: 0px 750px; font-size: 25px; text-align: center;">1</h1>
+  <thead style="color:#2E9FE4; font-size:15px;">
+    <tr >
+      <th style="text-align: center;">Code</th>
+      <th style="text-align: center;">Subject Name</th>
+      <th>theory</th>
+      <th>practice</th>
+      <th>credits</th>
+      <th>total</th>
+      <th>Grade</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+    <tbody  style="color:#2FF53E;">
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr style="color:#F40930;">
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px; ">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <h1 style=" margin: 0px 750px; font-size: 25px; text-align: center;">2</h1>
+  <thead style="color:#2E9FE4; font-size:15px; text-align: center;">
+    <tr >
+      <th style="text-align: center;">Code</th>
+      <th style="text-align: center;">Subject Name</th>
+      <th>theory</th>
+      <th>practice</th>
+      <th>credits</th>
+      <th>total</th>
+      <th>Grade</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+    <tbody style="color:#2FF53E;">
+
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+            <div class="form-group rus student">
+
+<table>
+  <h1 style=" margin: 0px 750px; font-size: 25px; text-align: center;">1</h1>
+  <thead style="color:#2E9FE4; font-size:15px; text-align: center;">
+    <tr >
+      <th style="text-align: center;">Code</th>
+      <th style="text-align: center;">Subject Name</th>
+      <th>theory</th>
+      <th>practice</th>
+      <th>credits</th>
+      <th>total</th>
+      <th>Grade</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+    <tbody style="color:#2FF53E;">
+
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Basic Circuit Theory</td>
+      <td>2</td>
+      <td>0+2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>B</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Basic Circuit Theory</td>
+      <td>2</td>
+      <td>0+2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>B</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Basic Circuit Theory</td>
+      <td>2</td>
+      <td>0+2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>B</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Basic Circuit Theory</td>
+      <td>2</td>
+      <td>0+2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>B</td>
+      <td> </td>
+    </tr>
+    <tr style="color:#F40930;">
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Basic Circuit Theory</td>
+      <td>2</td>
+      <td>0+2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>B</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Basic Circuit Theory</td>
+      <td>2</td>
+      <td>0+2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>B</td>
+      <td> </td>
+    </tr>
+  </thead>
+  </table>
+  <table>
+    <tbody ><h1 style=" margin: 0px 750px; font-size: 25px; text-align: center;">2</h1>
+  <thead style="color:#2E9FE4; font-size:15px; text-align: center;">
+  <tr >
+      <th style="text-align: center;">Code</th>
+      <th style="text-align: center;">Subject Name</th>
+      <th>theory</th>
+      <th>practice</th>
+      <th>credits</th>
+      <th>total</th>
+      <th>Grade</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+    <tbody style="color:#2FF53E;">
+    <tr>
+      <td style="width:2500px;">CSS 202</td>
+      <td>Microelectronics</td>
+      <td>2</td>
+      <td>0+2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>A-</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 202</td>
+      <td>Microelectronics</td>
+      <td>2</td>
+      <td>0+2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>A-</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 202</td>
+      <td>Microelectronics</td>
+      <td>2</td>
+      <td>0+2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>A-</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 202</td>
+      <td>Microelectronics</td>
+      <td>2</td>
+      <td>0+2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>A-</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 202</td>
+      <td>Microelectronics</td>
+      <td>2</td>
+      <td>0+2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>A-</td>
+      <td> </td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+<div class="form-group kaz student" id="ubt_score">
+<table>
+  <h1 style=" margin: 0px 750px; font-size: 25px; text-align: center;">1</h1>
+  <thead style="color:#2E9FE4; font-size:15px; text-align: center;">
+    <tr >
+      <th style="text-align: center;">Code</th>
+      <th style="text-align: center;">Subject Name</th>
+      <th>theory</th>
+      <th>practice</th>
+      <th>credits</th>
+      <th>total</th>
+      <th>Grade</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+    <tbody style="color:#FCBC04;">
+
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;"> and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;"> and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;"> and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;"> and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;"> and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;"> and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <h1 style=" margin: 0px 750px; font-size: 25px; text-align: center;">2</h1>
+  <thead style="color:#2E9FE4; font-size:15px; text-align: center;">
+    <tr >
+      <th style="text-align: center;">Code</th>
+      <th style="text-align: center;">Subject Name</th>
+      <th>theory</th>
+      <th>practice</th>
+      <th>credits</th>
+      <th>total</th>
+      <th>Grade</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+    <tbody style="color:#FCBC04;">
+
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;"> and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;"> and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;"> and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;"> and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;"> and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;"> and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+
+ <div class="form-group tur student" id="ubt_score">
+<table>
+  <h1 style=" margin: 0px 750px; font-size: 25px; text-align: center;">1</h1>
+  <thead >
+    <tr style="color:#2E9FE4; font-size:15px; text-align: center;">
+      <th style="text-align: center;">Code</th>
+      <th style="text-align: center;">Subject Name</th>
+      <th>theory</th>
+      <th>practice</th>
+      <th>credits</th>
+      <th>total</th>
+      <th>Grade</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+    <tbody style="color:#6170CA;">
+
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Personal Development in Computer Science</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Personal Development in Computer Science</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Personal Development in Computer Science</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Personal Development in Computer Science</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+        
+  </tbody>
+</table>
+<table>
+  <h1 style=" margin: 0px 750px; font-size: 25px; text-align: center;">2</h1>
+  <thead style="color:#2E9FE4; font-size:15px; text-align: center;">
+    <tr >
+      <th style="text-align: center;">Code</th>
+      <th style="text-align: center;">Subject Name</th>
+      <th>theory</th>
+      <th>practice</th>
+      <th>credits</th>
+      <th>total</th>
+      <th>Grade</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+    <tbody style="color:#6170CA;">
+
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">State Examination for Computer Science</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">State Examination for Computer Science</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">State Examination for Computer Science</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+</div>
+</body>
+</html>

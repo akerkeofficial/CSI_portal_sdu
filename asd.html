@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Program Structure</title>
+<link rel="stylesheet" href="css/schedule_style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+$(document).ready(function(){
+        if($('#graduate_degree').val() == '1en03a'){ // or this.value == 'volvo'
+            console.log('OK');
+            $('.eng').show();
+            $('.rus').hide();
+            $('.kaz').hide();
+            $('.tur').hide();
+
+        }
+        else{
+            $('.rus').show();
+            $('.eng').hide();
+        }
+        $('#graduate_degree').change(function(){
+          if($(this).val() == '1en03a' ){ // or this.value == 'volvo'
+            console.log('OK');
+            $('.eng').show();
+            $('.rus').hide();
+            $('.kaz').hide();
+            $('.tur').hide();
+          }else if($(this).val() == '1en03b' ){
+            $('.eng').hide();
+            $('.rus').show();
+            $('.kaz').hide();
+            $('.tur').hide();
+          }
+          else if($(this).val() == '1en03c' ){
+            $('.eng').hide();
+            $('.rus').hide();
+            $('.kaz').show();
+            $('.tur').hide();
+          }
+          else if($(this).val() == '1en03d' ){
+            $('.eng').hide();
+            $('.rus').hide();
+            $('.kaz').hide();
+            $('.tur').show();
+          }
+        });
+    });
+  </SCRIPT>
+
+</head>
+<body>
+
+  <div class="container">
+
+    
+
+  <div class="column" style="margin: 100px 250px; width:100%;">
+  <div class="dropdown pull-left" style="padding-left: 15px;">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" >  Engineering and Natural
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+    <li class="dropdown-submenu">
+        <a class="test" tabindex="1" href="#" >Information systems<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-submenu">
+            <a class="test" href="#" >1 course<span class="caret"></span></a>
+            <ul class="dropdown-menu" id="graduate_degree">
+              <li><a href="#" >1en03a</a></li>
+              <li><a href="#">1en03b</a></li>
+              <li><a href="#">1en03c</a></li>
+              <li><a href="#">1en03d</a></li>
+            </ul>
+            <div class="form-group eng student" id="ubt_score">
+<table>
+  <h1 style=" margin: 0px 750px; font-size: 25px; text-align: center;">1</h1>
+  <thead style="color:#2E9FE4; font-size:15px;">
+    <tr >
+      <th style="text-align: center;">Code</th>
+      <th style="text-align: center;">Subject Name</th>
+      <th>theory</th>
+      <th>practice</th>
+      <th>credits</th>
+      <th>total</th>
+      <th>Grade</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+    <tbody  style="color:#2FF53E;">
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px;">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+    <tr style="color:#F40930;">
+      <td style="width:2500px;">CSS 101</td>
+      <td style="width:8000px; ">Algorithms and Programming</td>
+      <td>2</td>
+      <td>0+4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>A</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">2 course<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">A group</a></li>
+              <li><a href="#">B group</a></li>
+              <li><a href="#">C group</a></li>
+              <li><a href="#">D group</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">3 course<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">A group</a></li>
+              <li><a href="#">B group</a></li>
+              <li><a href="#">C group</a></li>
+              <li><a href="#">D group</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">4 course<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">A group</a></li>
+              <li><a href="#">B group</a></li>
+              <li><a href="#">C group</a></li>
+              <li><a href="#">D group</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Computer systems and software<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-submenu">
+            <a class="test" href="#">1 course<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="GOOGLE.COM">A group</a></li>
+              <li><a href="#">B group</a></li>
+              <li><a href="#">C group</a></li>
+              <li><a href="#">D group</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">2 course<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">A group</a></li>
+              <li><a href="#">B group</a></li>
+              <li><a href="#">C group</a></li>
+              <li><a href="#">D group</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">3 course<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">A group</a></li>
+              <li><a href="#">B group</a></li>
+              <li><a href="#">C group</a></li>
+              <li><a href="#">D group</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">4 course<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">A group</a></li>
+              <li><a href="#">B group</a></li>
+              <li><a href="#">C group</a></li>
+              <li><a href="#">D group</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Mathematics (science)<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-submenu">
+            <a class="test" href="#">1 course<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="GOOGLE.COM">A group</a></li>
+              <li><a href="#">B group</a></li>
+              <li><a href="#">C group</a></li>
+              <li><a href="#">D group</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">2 course<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">A group</a></li>
+              <li><a href="#">B group</a></li>
+              <li><a href="#">C group</a></li>
+              <li><a href="#">D group</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">3 course<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">A group</a></li>
+              <li><a href="#">B group</a></li>
+              <li><a href="#">C group</a></li>
+              <li><a href="#">D group</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">4 course<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">A group</a></li>
+              <li><a href="#">B group</a></li>
+              <li><a href="#">C group</a></li>
+              <li><a href="#">D group</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
+       
+
+
+
+
+  </div>
+     <script>
+
+</script>   
+</body>
+</html>

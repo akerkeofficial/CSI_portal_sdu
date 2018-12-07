@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<link rel="stylesheet" href="css/elective_style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+<script type="text/javascript">
+function AlertIt() {
+var answer = confirm ("Are you sure you want to choose this courses?")
+if (answer)
+  alert ("SAVED")
+window.location="homepage.html";
+}
+</script>
+
+<body>
+
+<div class="column">
+      <div class="col-md-4"  style=" margin: 10px 10px;">
+
+<div class="container">
+<a href="homepage.html" ><img src="image/sdu_only.svg" width="250" style="margin:  0px 0px;"></a>
+<div class="w3-sidebar w3-bar-block" >
+
+<div class="thumbnail">
+      <a href="homepage.html" ><img src="image/homepage.jpeg" width="40" style="margin:  0px 80px;"></a>
+
+  <a href="program.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-file"></i> Program Structure</a> 
+  <a href="elective.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-plus-square"></i> Elective Course Registration</a> 
+  <a href="teacher.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-address-card-o"></i> Teachers</a> 
+  <a href="schedule.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-object-ungroup"></i> Schedule</a>
+  <a href="work.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-trash"></i> Homework/Deadline/ Exams</a>
+  <a href="grades.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-percent"></i> Grades List</a>
+  <a href="transcript.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-graduation-cap"></i> Transcript</a>
+  <a href="mail.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-envelope-o"></i> SDUmail</a>
+  <a href="#" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-globe"></i> Settings</a>
+  <a href="support.html" class="w3-bar-item w3-button" style="color:#2E9FE4;"><i class="fa fa-question"></i> Support</a>
+ <button class="button" style="vertical-align:middle" onclick="location.href='login.html'"><span>Log Out </span></button>
+
+</div>
+
+</div>
+</div>
+</div>
+      <div class="col-md-4"  style=" margin: 10px 10px;">
+
+<div class="intro">
+
+  <div class="panel-group">
+        <div class="panel panel-default" style=" height: 200px; font-size: 17px;">
+            <div class="panel-heading"> <span  class="fa fa-plus-square">
+            </span><b>Area Elective Course 4 (CSS 313, CSS 309)</b>
+            </div>
+
+            <form class="important">
+              <input type="radio" name="gender" value="male" onClick=0 style="margin:13px 0px;"> 
+                CSS 313: Embedded Systems<br>
+              <input type="radio" name="gender" value="female" onClick=0 style="margin:13px 0px;"> 
+                CSS 309: Assembly<br>
+            </form> 
+        </div>
+  </div>
+
+  <div class="panel-group">
+        <div class="panel panel-default" style=" height: 230px; font-size: 17px;">
+            <div class="panel-heading"> 
+              <span  class="fa fa-plus-square"></span>
+              <b>Area Elective Course 3 (CSS 303, INF 321, INF 338)</b>
+            </div>
+
+            <form class="important">
+              <input type="radio" name="gender" value="male"  onClick=0 style="margin:13px 0px;"> 
+                CSS 303: Foundations of Information Security<br>
+              <input type="radio" name="gender" value="female" onClick=0 style="margin:13px 0px;"> 
+                INF 321: Machine Learning<br>
+              <input type="radio" name="gender" value="other" onClick=0 style="margin:13px 0px;"> 
+                INF 338: Linux Administration<br><br>
+            </form> 
+
+        </div>
+
+            <button class="city"  style="vertical-align:middle" type="submit" value="submit" onclick="javascript:AlertIt();"><span>Submit</span></button>
+  </div>
+
+</div>
+
+
+
+
+
+</body>
+
+</html>

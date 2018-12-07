@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  
+
+      <link rel="stylesheet" href="css/login_style.css">
+
+      <script type="text/javascript" src="script.js">    </script>
+
+</head>
+
+<body>
+  
+<div class="container">
+  <div class="info">
+    <h1>Login Form</h1>
+  </div>
+</div>
+<div class="form">
+  <div class="thumbnail"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/hat.svg"/></div>
+  <form class="register-form">
+    <input type="text" placeholder="name"/>
+    <input type="password" placeholder="password"/>
+    <input type="text" placeholder="email address"/>
+    <button>create</button>
+  </form>
+
+  <form class="login-form" name="form1" action="homepage.html" method="get" >
+    <input type="text" placeholder="student number" type="submit" />
+    <input type="password" placeholder="password"/>
+
+    <button name="tData" onclick="location.href='homepage.html'" type="button" >login</button>
+    <p class="message">Forgot password? <a href="pass.html">Reset password</a></p>
+  </form>
+</div>
+
+
+</body>
+</html>
